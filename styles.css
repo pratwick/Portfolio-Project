@@ -1,0 +1,511 @@
+body{
+    margin: 0px;
+}
+
+#body-header{
+  height: 80vh;
+  background: url("https://www.avast.com/hs-fs/hubfs/New_Avast_Academy/Hackers/Hacker-Hero-a1.png?width=1200&name=Hacker-Hero-a1.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  background-attachment: fixed;
+}
+
+.horizontal-list{
+    list-style: none;
+    padding: 2rem;
+    margin: 0px;
+    text-align: center;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 120;
+    font-size: 0.9rem;
+}
+  
+.horizontal-list li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-list li a{
+    transition: color 0.5s, border-bottom 4s;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.nav-list li a:hover{
+    color: lightgrey;
+    border-bottom: 1px solid #fff;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#name-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-top: 3.6rem;
+}
+
+.social-icons li a i:hover{
+    color: rgb(87, 87, 87);
+    border-bottom: none;
+    box-shadow: 0px 0px 6px 4px grey;
+}
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 13rem;
+    width: 13rem;
+    margin: auto;
+    margin-top: -22vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius:50%;
+    box-shadow: 0px 0px 10px 7px grey;
+    border: 5px solid grey;
+}
+
+#about p{
+  width: 70%;
+  margin: 5rem auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1rem;
+  font-family: fantasy;
+}
+
+#about span{
+    color: rgb(0, 0, 207);
+    font-weight: 600;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-display{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress{
+    width: 10rem;
+    height: 1.7rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    margin: 2rem;
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1.3rem ;
+    margin-left: 10px;
+}
+
+
+
+
+/* Percentage Class */
+.eighty-five-percentage{
+    width: 85%;
+    height: inherit;
+    background-color: blue;
+   
+}
+
+.ninety-percentage{
+    width: 90%;
+    height: inherit;
+    background-color: orangered;
+}
+
+.eighty-seven-percentage{
+  width: 87%;
+  height: inherit;
+  background-color: rgb(152, 83, 152);
+}
+
+.ninety-two-percentage{
+   width: 92%;
+   height: inherit;
+   background-color: rgb(12, 142, 142)
+}
+
+.eighty-percentage{
+    width: 80%;
+    height: inherit;
+    background-color: rgb(194, 93, 93);
+}
+
+.eighty-five-percentage{
+   width: 85%;
+   height: inherit;
+   background-color: rgb(214, 125, 17);
+}
+
+/* Timeline */
+
+.timeline{
+    position:relative;
+    width: 75%;
+}
+
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1):after{
+    content: '';
+    position:absolute;
+    z-index: 1;
+    top: 45%;
+    right: -13.2%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: red;
+}
+
+.timeline-box:nth-child(2n):after{
+    content: '';
+    position:absolute;
+    z-index: 1;
+    top: 45%;
+    right: 106.9%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: red;
+}
+
+.timeline-divider{
+  position: absolute;
+  height: 74%;
+  width: 0;
+  border: 3px dashed #0096fa6b;
+  top: 12%;
+  left: 50%;
+}
+
+.timeline-traveller{
+    position:sticky;
+    top:30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.timeline-traveller i{
+    font-size: 2.6rem;
+}
+
+
+
+
+.exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-icon{
+  font-size: 4rem;
+  padding: 1rem;
+  color: orange;
+}
+
+.exp-head{
+text-align: right;
+padding: 1rem;
+}
+
+.exp-head h3{
+    color: #2857a4;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.exp-head h4{
+    color: rgb(255, 140, 0);
+    font-size: 1.4rem;
+    margin: auto;
+}
+
+.exp-head p{
+    color: black;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.exp-disc{
+  padding: 1rem;
+}
+
+/* PortFolio */
+
+.port-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.port-item{
+    width: 30%;
+    height: 16rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.port-container  h2{
+    text-align: center;
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+}
+
+.port-item:hover{
+    box-shadow: 0px 0px 10px 6px grey;
+}
+
+.port-item:hover .port-detail{
+    animation-play-state: running;
+  }
+
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+.port-item-1{
+background: url("p-1.jpg");
+background-size: cover;
+opacity: 0.7;
+}
+.port-item-2{
+ background: url("p-2.jpg");
+ background-size: cover;
+ opacity: 0.7;
+}
+.port-item-3{
+  background: url("p-3.jpg");
+  background-size: cover;
+  opacity: 0.7;
+}
+.port-item-4{
+  background: url("p-4.jpg");
+  background-size: cover;
+  opacity: 0.7;
+}
+.port-item-5{
+  background: url("p-5.jpg");
+  background-size: cover;
+  opacity: 0.7;
+}
+.port-item-6{
+    background: url("p-6.jpg");
+    background-size: cover;
+    opacity: 0.7;
+}
+
+/* Contact */
+#contact{
+    background-color: #2857a4;
+    color:#fff
+}
+
+#contact span, #contact span i{
+    color: #fff;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contact-form{
+   width: 45%;
+   height: 300px;
+}
+
+.contact-details{
+   width: 45%;
+   height: 300px;
+}
+
+.input-style {
+    background-color: #2857a4;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.input-style:focus {
+    background-color: #2857a4; 
+    border: none;
+    border-bottom: none; /* Remove the border when focused */
+    outline: none;
+}
+
+.send-button{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.my-form{
+    width: 80%;
+    margin: auto;
+}
+
+/* Comman Margin Classes */
+.mb75px{
+    margin-bottom: 75px ;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .timeline-divider{
+        left: 8%;
+    }
+
+    .timeline-box{
+        left:12% !important; /* no other rule will override this rule */
+        width: 80%;
+    }
+
+   /*
+    .timeline-box:nth-child(2n){
+        left: 12%;
+    }
+   */    
+   
+   .timeline-box::after{
+    left: -7.2%;
+   }
+   
+   /*
+   .timeline-box:nth-child(2n+1):after{
+     left: -7%;
+   }
+
+   .timeline-box:nth-child(2n):after{
+     left: -7%;
+   }
+   */  
+
+
+   .nav-list{
+    display: none;
+     }
+
+ /* Show Hamburger Menu  */
+ .hamburger-menu{
+    display: block;
+    margin-right: 1.5rem;
+    margin-top: 0rem;
+    text-align: right;
+    padding: 1rem;
+ }
+
+ /* Collapsible Navigation */
+ #navlist{
+    background-color: none;
+ }
+
+ .s-icon{
+    display: none;
+ }
+
+.port-detail{
+    font-size: 1rem;
+    margin-top: 4rem;
+}
+
+.port-item{
+    height: 12rem;
+}
+
+ #my-image{
+    margin-top: -34vh;
+}
+.contact-details{
+    display: none;
+}
+
+}
