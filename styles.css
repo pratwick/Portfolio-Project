@@ -301,7 +301,7 @@ padding: 1rem;
 }
 
 .exp-disc{
-  padding: 1rem;
+  padding: 0rem;
 }
 
 /* PortFolio */
@@ -320,7 +320,7 @@ padding: 1rem;
     width: 30%;
     height: 16rem;
     border-radius: 10px;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .port-container  h2{
@@ -330,10 +330,13 @@ padding: 1rem;
     animation-timing-function: ease-in-out;
     animation-play-state: paused;
     animation-fill-mode: backwards;
+    margin: 5rem;
+    color: black;
 }
 
 .port-item:hover{
     box-shadow: 0px 0px 10px 6px grey;
+    cursor: pointer;
 }
 
 .port-item:hover .port-detail{
@@ -351,32 +354,29 @@ padding: 1rem;
   }
 
 .port-item-1{
-background: url("p-1.jpg");
 background-size: cover;
 opacity: 0.7;
+background-color: rgb(255, 97, 97);
 }
 .port-item-2{
- background: url("p-2.jpg");
  background-size: cover;
  opacity: 0.7;
+ background-color: #2857a4;
 }
 .port-item-3{
-  background: url("p-3.jpg");
   background-size: cover;
   opacity: 0.7;
+  background-color: orange;
 }
 .port-item-4{
-  background: url("p-4.jpg");
   background-size: cover;
   opacity: 0.7;
 }
 .port-item-5{
-  background: url("p-5.jpg");
   background-size: cover;
   opacity: 0.7;
 }
 .port-item-6{
-    background: url("p-6.jpg");
     background-size: cover;
     opacity: 0.7;
 }
@@ -404,6 +404,8 @@ opacity: 0.7;
 }
 
 .contact-details{
+    margin-top: 5rem;
+   text-align: center;
    width: 45%;
    height: 300px;
 }
@@ -437,6 +439,15 @@ opacity: 0.7;
     margin-bottom: 75px ;
 }
 
+@media screen and (min-width: 601px){
+    .hamburger-menu{
+        display: none;
+        margin-right: 1.5rem;
+        margin-top: 0rem;
+        text-align: right;
+        padding: 1rem;
+     }
+} 
 
 
 @media screen and (max-width: 600px){
@@ -498,7 +509,7 @@ opacity: 0.7;
 }
 
 .port-item{
-    height: 12rem;
+    height: 5rem;
 }
 
  #my-image{
@@ -508,4 +519,135 @@ opacity: 0.7;
     display: none;
 }
 
+.port-container  h2{
+    text-align: center;
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+    margin: 1rem;
+    color: black;
+}
+
+}
+
+.container {
+    width: 80%;
+    height: 73vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Image Grid */
+.container {
+    width: 70%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container img:hover {
+    transform: scale(1.3);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wrapper for modal content */
+.modal-content-wrapper {
+    position: relative;
+}
+
+/* Modal Image */
+.modal-content {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Close Button */
+.close1 {
+    position: absolute;
+    top: 5rem;  /* Adjust close button position */
+    right: 20rem; /* Move close button closer to the image */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3px 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: none;
+}
+.close1:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 0px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.close2 {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close2:hover {
+    color: red;
+}
+
+a{
+    text-decoration: none;
 }
